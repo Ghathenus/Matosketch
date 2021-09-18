@@ -1,0 +1,38 @@
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+
+
+  <h1 style="color :rgb(11, 5, 41)"><strong>The List of Users:</strong></h1>
+<ul>
+<div class ="row" >
+ <div *ngFor="let u of  users" >
+
+
+   <ul><app-usercards [user] ="u"></app-usercards>
+    </ul>
+    </div>
+    </div>
+    </ul>
+
+
+  <!-- <div *ngIf="facilities">
+    <div class="card mb-4">
+      <div class="card-img-wrapper">
+        <img src="assets/aa.jpg" width="30" height="30px" class="card-img-top">
+        /</div>
+        <div class="card-body p-1">
+
+    <h6 class="card-title text-center mb-1"><i class="fa fa-user mr-2"></i>
+      {{facilities[0].name}}
+    </h6>
+
+    <p class="card-text text-muted text-center">{{facilities[0].address}}</p>
+        </div>
+        </div>
+
+      </div> -->
+
+</div>
+</div>
+
+<router-outlet></router-outlet>

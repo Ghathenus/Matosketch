@@ -1,0 +1,67 @@
+
+
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+
+<div class="row" *ngIf="profile">
+
+
+      <div class="col-4" >
+        <h1 style="color :rgb(11, 5, 41)">{{profile.firstName}} {{profile.lastName}}</h1>
+
+        <h6>Welcome </h6>
+        </div>
+    <div class="col-8">
+
+    </div>
+    <div class="col-4">
+    <div  style="background-color:rgba(0, 0, 0, 0.0);">
+      <img src="assets/ffff.png" class="card-img-top img-thumbnail">
+      <div class="card-body">
+        <div>
+          <strong style="color :rgb(11, 5, 41)">First Name:</strong>
+          <p style="color :rgb(11, 5, 41)"><strong>{{profile.firstName}}</strong></p>
+        </div>
+        <div>
+          <strong style="color :rgb(11, 5, 41)">Last Name:</strong>
+          <p style="color :rgb(11, 5, 41)"><strong>{{profile.lastName}}</strong></p>
+        </div>
+        <strong style="color :rgb(11, 5, 41)">Address</strong>
+        <p style="color :rgb(11, 5, 41)"><strong>{{profile.address}}</strong></p>
+          <div>
+            <strong style="color :rgb(11, 5, 41)">Age:</strong>
+            <p style="color :rgb(11, 5, 41)"><strong>{{profile.age}}</strong></p>
+          </div>
+
+          <div>
+            <strong style="color :rgb(11, 5, 41)">Email:</strong>
+            <p style="color :rgb(11, 5, 41)"><strong>{{profile.email}}</strong></p>
+          </div>
+
+
+        </div>
+
+      </div>
+      </div>
+<div class="col-8" style="background-color:rgb(11, 5, 41);">
+
+  <mat-tab-group>
+
+ <div  > <mat-tab label="About {{profile.firstName}}"> <h2><strong>{{profile.description}}</strong> </h2></mat-tab></div>
+ <div> <mat-tab label="Video"><ul><h1> <app-uploadvideo></app-uploadvideo></h1></ul> </mat-tab></div>
+
+ <div> <mat-tab label="Photos"><app-ppics [profile]="profile"></app-ppics><app-photoupload></app-photoupload> </mat-tab></div>
+ <mat-tab label=" {{profile.uName}}'s Messages"><app-messages></app-messages></mat-tab>
+ <!-- <div *ngIf="profile.name"> <mat-tab label="Video"><ul><h1> Video will go here </h1></ul> </mat-tab></div> -->
+</mat-tab-group>
+
+
+
+        </div>
+        </div>
+
+
+
+
+
+

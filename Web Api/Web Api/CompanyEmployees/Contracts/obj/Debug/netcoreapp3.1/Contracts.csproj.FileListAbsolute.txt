@@ -1,0 +1,36 @@
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.deps.json
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.AssemblyReference.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfoInputs.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfo.cs
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CopyComplete
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.deps.json
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.AssemblyReference.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfoInputs.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfo.cs
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CopyComplete
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.deps.json
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.AssemblyReference.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfoInputs.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfo.cs
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CopyComplete
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Contracts\obj\Debug\netcoreapp3.1\Contracts.pdb

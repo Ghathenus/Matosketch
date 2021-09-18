@@ -1,0 +1,21 @@
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-title">
+
+<div class="ud-body">
+  <div class="msg-box" style="background-color:rgb(255, 255, 255);">
+    <ul>
+      <li *ngFor="let mObj of msgInboxArray" [ngClass]="mObj.user === msgDto.user ? 'in-msg' : 'ex-msg'">{{mObj.user}} :<br /><span class="msg-italic-style">{{mObj.msgText}}</span></li>
+    </ul>
+  </div>
+  <div >
+    <p class="text-left" style="color :rgb(11, 5, 41)"><strong><mat-icon >error_outline</mat-icon>Public Chat (Use a fake name for your safety)</strong></p>
+  </div>
+  <div class="ud-flex-row">
+    <input type="text" placeholder="Type message here" class="msg-input" [(ngModel)]="msgDto.msgText"  />
+    <button class="send-btn" (click)= "send()"><i class="fa fa-paper-plane">Send</i></button>
+  </div>
+  <input type="text" placeholder="Your name" class="name-box" [(ngModel)]="msgDto.user" />
+</div>
+</div>
+</div>
+

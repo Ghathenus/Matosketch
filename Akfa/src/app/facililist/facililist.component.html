@@ -1,0 +1,42 @@
+<div class="row" *ngIf="facility">
+  <div class="col-4">
+    <div class="card" style="background-color:rgb(11, 5, 41);">
+      <img src="assets/aa.jpg" class="card-img-top img-thumbnail">
+      <div class="card-body">
+        <div>
+          <strong>Address:</strong>
+          <p>{{facility.address}}</p>
+          </div>
+          <div>
+            <strong>Website:</strong>
+            <p>{{facility.website}}</p>
+          </div>
+          <div>
+            <strong>Email:</strong>
+            <p>{{facility.email}}</p>
+          </div>
+          <div>
+            <strong>Personnel:</strong>
+            <p>{{facility.personnel}}</p>
+          </div>
+          <div class="card-footer" style="background-color:rgb(11, 5, 41);">
+          <div class="btn-group d-flex">
+            <button class="btn btn-primary">Message</button>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+<div class="col-8" style="background-color:rgb(11, 5, 41);">
+
+  <mat-tab-group>
+  <mat-tab label="About {{facility.name}}"> <ul><h1>Description</h1></ul><ul><p>{{facility.description}}</p></ul> </mat-tab>
+  <mat-tab label="Fields"><ul><h1>Fields of Specialties</h1></ul><ul><p>{{facility.fofSpecialties}}</p></ul> </mat-tab>
+  <mat-tab label="Photos"><ul><h1><app-ppics [profile]="facility"></app-ppics></h1></ul> </mat-tab>
+</mat-tab-group>
+
+
+
+        </div>
+        </div>

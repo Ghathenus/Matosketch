@@ -1,0 +1,54 @@
+<form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+  <h2 class="text-center text-primary">Sign Up</h2>
+  <hr>
+  <div class="form-group">
+    <input type="text" class="form-control" name="name"
+    [(ngModel)]="model.name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="password"
+    [(ngModel)]="model.pwd" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="website"
+    [(ngModel)]="model.website" placeholder="Website">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="email"
+    [(ngModel)]="model.email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="pnumber"
+    [(ngModel)]="model.phone_number" placeholder="Phone-number">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="address"
+    [(ngModel)]="model.address" placeholder="Address">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="fields"
+    [(ngModel)]="model.fields" placeholder="Fields">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="description"
+    [(ngModel)]="model.description" placeholder="Description">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="pictures"
+    [(ngModel)]="model.pictures" placeholder="Pictures">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="video"
+    [(ngModel)]="model.video" placeholder="Video">
+  </div>
+  <div class="from-group text-center">
+  <button class="btn btn-success mr-2" type="submit">Register</button>
+  <button class="btn btn-success mr-2" (click)="cancel()" type="button">Cancel</button>
+
+  </div>
+
+
+
+
+
+  </form>

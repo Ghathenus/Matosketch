@@ -1,0 +1,49 @@
+.image {
+  background-repeat: no-repeat;
+ }
+/* ul {
+  display: block;
+  list-style-type: none;
+  margin: 20px;
+  max-height:400px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+li a {
+  background: rgb(161, 13, 13);
+  color: #fff;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+li a:hover {
+  background: #555;
+}
+
+.button {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin:10px
+}
+
+.small-btn {
+  width: 50px;
+  height: 25px;
+}
+
+.medium-btn {
+  width: 70px;
+  height: 30px;
+}
+
+.big-btn {
+  width: 90px;
+  height: 40px;
+}
+ */

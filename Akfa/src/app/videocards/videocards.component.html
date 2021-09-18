@@ -1,0 +1,29 @@
+
+  <div class="card-img-wrapper"><a class="nav-link" href="{{video.url}}" routerLinkActive="active"
+    >
+    <img src="assets/pv.png"  class="card-img-top">
+<ul class="list-inline facility-icons animate text-center">
+<li class ="list-inline-item"><strong style= "color :rgb(11, 5, 41)"></strong></li>
+
+
+</ul>
+</a>
+
+
+    </div>
+    <div class="card-body p-1">
+      <h6 class="card-title text-center mb-1">
+        <strong style= "color :rgb(11, 5, 41)">
+        {{video.id}}
+      </strong>
+      </h6>
+<h6 class="card-title text-center mb-1">
+  <strong style= "color :rgb(11, 5, 41)">
+  Poster's Id
+</strong>
+</h6>
+
+<p class="card-text text-muted text-center" style= "color :rgb(11, 5, 41)"><strong style= "color :rgb(11, 5, 41)">{{video.userId}}</strong></p>
+    </div>
+
+    <router-outlet></router-outlet>

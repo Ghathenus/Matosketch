@@ -1,0 +1,414 @@
+
+<nb-layout style="background-color: rgba(0,0,0,0.0);">
+
+
+
+  <nb-layout-column style="background-image: url('assets/zz.jpg');">
+
+          <nb-actions class="navbar-inner" style="background-color: rgba(0,0,0,0.0);" size="medium"  >
+            <!-- <nb-action><button nbButton status="info" size="tiny" (click)="toggleCompact()"></button>
+            </nb-action> -->
+            <!-- <nb-action><p>StreamPixel</p></nb-action>
+            <nb-action><a class="btn btn-outline-success my-2 my-sm-0" routerLink='/**' routerLinkActive=active style="color:rgb(0, 0, 0)" href="#">Home</a>
+            </nb-action>
+            <nb-action><a class="btn btn-outline-success my-2 my-sm-0" routerLink='/markets' routerLinkActive=active style="color:black"  href="#">Market Research</a>
+            </nb-action>
+            <nb-action><a class="btn btn-outline-success my-2 my-sm-0" routerLink='/facilities' routerLinkActive=active  style="color:black" href="#">Facilities</a>
+            </nb-action>
+            <nb-action><a class="btn btn-outline-success my-2 my-sm-0" routerLink='/main' routerLinkActive=active  style="color:black" href="#">Personnel</a>
+            </nb-action>
+            <nb-action><a class="btn btn-outline-success my-2 my-sm-0" routerLink='/authentication/register' routerLinkActive=active style="color:black" href="#">Register</a>
+            </nb-action> -->
+
+            <nb-action>
+              <img  src="assets/FinalLogo.png" width="90" height="110">
+          </nb-action>
+          <nb-action><mat-icon style="color :rgb(11, 5, 41)">home</mat-icon><a class="nav-link"[routerLink]="['/**']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+            >Home</a>
+           </nb-action>
+            <nb-action><mat-icon style="color :rgb(11, 5, 41)">question_answer</mat-icon><a class="nav-link"[routerLink]="['/feed']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+             >Feed</a>
+             <ul *ngIf='isUserAuthenticated' class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/post' routerLinkActive="active" style= "color :rgb(11, 5, 41)"><strong>Post On Timeline</strong>    </a>
+              </li>
+            </ul>
+            </nb-action>
+            <nb-action><mat-icon style="color :rgb(11, 5, 41)">collections</mat-icon><a class="nav-link"[routerLink]="['/users']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+              >Users' Photo Galleries</a>
+             </nb-action>
+             <nb-action><mat-icon style="color :rgb(11, 5, 41)">play_circle_filled</mat-icon><a class="nav-link"[routerLink]="['/vids']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+              >Videos Library</a>
+             </nb-action>
+             <nb-action><mat-icon style="color :rgb(11, 5, 41)">chat</mat-icon><a class="nav-link"[routerLink]="['/chatting']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+              >Chat</a>
+             </nb-action>
+
+
+            <nb-action><mat-icon style="color :rgb(11, 5, 41)">account_circle</mat-icon><a class="nav-link"[routerLink]="['/authentication/login']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Login</a>
+              <!-- <ul *ngIf='isUserAuthenticated' class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a style= "color :rgb(255, 255, 255)" href="/" class="nav-link" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="loguserout() "><strong>
+                    Logout</strong>
+                    </a>
+                </li>
+              </ul> -->
+            </nb-action>
+            <nb-action><mat-icon style="color :rgb(11, 5, 41)">person_add</mat-icon><a class="nav-link"[routerLink]="['/authentication/registerpersonnel']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Register</a>
+              <!-- <ul *ngIf='isUserAuthenticated' class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a style= "color :rgb(255, 255, 255)" href="/" class="nav-link" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="loguserout() "><strong>
+                    Logout</strong>
+                    </a>
+                </li>
+              </ul> -->
+            </nb-action>
+
+
+            <nb-action>
+
+              <ul *ngIf='isUserAuthenticated' class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <a class="nav-link"[routerLink]="['/profile']" style= "color :rgb(11, 5, 41)" routerLinkActive="active"
+                >
+                <mat-icon style="color :rgb(11, 5, 41)">account_box</mat-icon>
+
+               </a></ul>
+
+
+
+
+
+          </nb-action>
+
+<nb-action><ul *ngIf='isUserAuthenticated' class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <li class="nav-item">
+    <a style= "color :rgb(11, 5, 41)" href="/" class="nav-link" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="logout() "><strong>
+      Logout</strong>
+      </a>
+  </li>
+</ul></nb-action>
+          </nb-actions>
+
+
+    <style>
+      :host {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        color: #333;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 8px 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .spacer {
+        flex: 1;
+      }
+
+      .toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #1976d2;
+        color: white;
+        font-weight: 600;
+      }
+
+      .toolbar img {
+        margin: 0 16px;
+      }
+
+      .toolbar #twitter-logo {
+        height: 40px;
+        margin: 0 8px;
+      }
+
+      .toolbar #youtube-logo {
+        height: 40px;
+        margin: 0 16px;
+      }
+
+      .toolbar #twitter-logo:hover,
+      .toolbar #youtube-logo:hover {
+        opacity: 0.8;
+      }
+
+      .content {
+        display: flex;
+        margin: 82px auto 32px;
+        padding: 0 16px;
+        max-width: 960px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      svg.material-icons {
+        height: 24px;
+        width: auto;
+      }
+
+      svg.material-icons:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      .card svg.material-icons path {
+        fill: #888;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 16px;
+      }
+
+      .card {
+        border-radius: 4px;
+        border: 1px solid #eee;
+        background-color: #fafafa;
+        height: 40px;
+        width: 200px;
+        margin: 0 8px 16px;
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        line-height: 24px;
+      }
+
+      .card-container .card:not(:last-child) {
+        margin-right: 0;
+      }
+
+      .card.card-small {
+        height: 16px;
+        width: 168px;
+      }
+
+      .card-container .card:not(.highlight-card) {
+        cursor: pointer;
+      }
+
+      .card-container .card:not(.highlight-card):hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+      }
+
+      .card-container .card:not(.highlight-card):hover .material-icons path {
+        fill: rgb(105, 103, 103);
+      }
+
+      .card.highlight-card {
+        background-color: #1976d2;
+        color: white;
+        font-weight: 600;
+        border: none;
+        width: auto;
+        min-width: 30%;
+        position: relative;
+      }
+
+      .card.card.highlight-card span {
+        margin-left: 60px;
+      }
+
+      svg#rocket {
+        width: 80px;
+        position: absolute;
+        left: -10px;
+        top: -24px;
+      }
+
+      svg#rocket-smoke {
+        height: calc(100vh - 95px);
+        position: absolute;
+        top: 10px;
+        right: 180px;
+        z-index: -10;
+      }
+
+      a,
+      a:visited,
+      a:hover {
+        color: #1976d2;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #125699;
+      }
+
+      .terminal {
+        position: relative;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 6px;
+        padding-top: 45px;
+        margin-top: 8px;
+        overflow: hidden;
+        background-color: rgb(15, 15, 16);
+      }
+
+      .terminal::before {
+        content: "\2022 \2022 \2022";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: rgb(58, 58, 58);
+        color: #c2c3c4;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 0;
+        padding: 14px 0;
+        text-indent: 4px;
+      }
+
+      .terminal pre {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        color: white;
+        padding: 0 1rem 1rem;
+        margin: 0;
+      }
+
+      .circle-link {
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        margin: 8px;
+        background-color: white;
+        border: 1px solid #eeeeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: 1s ease-out;
+      }
+
+      .circle-link:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+      }
+
+      footer a {
+        display: flex;
+        align-items: center;
+      }
+
+      .github-star-badge {
+        color: #24292e;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        padding: 3px 10px;
+        border: 1px solid rgba(27,31,35,.2);
+        border-radius: 3px;
+        background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+        margin-left: 4px;
+        font-weight: 600;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+      }
+
+      .github-star-badge:hover {
+        background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+        border-color: rgba(27,31,35,.35);
+        background-position: -.5em;
+      }
+
+      .github-star-badge .material-icons {
+        height: 16px;
+        width: 16px;
+        margin-right: 4px;
+      }
+
+      svg#clouds {
+        position: fixed;
+        bottom: -160px;
+        left: -230px;
+        z-index: -10;
+        width: 1920px;
+      }
+
+
+      /* Responsive Styles */
+      @media screen and (max-width: 767px) {
+
+        .card-container > *:not(.circle-link) ,
+        .terminal {
+          width: 100%;
+        }
+
+        .card:not(.highlight-card) {
+          height: 16px;
+          margin: 8px 0;
+        }
+
+        .card.highlight-card span {
+          margin-left: 72px;
+        }
+
+        svg#rocket-smoke {
+          right: 120px;
+          transform: rotate(-5deg);
+        }
+      }
+
+      @media screen and (max-width: 575px) {
+        svg#rocket-smoke {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    </style>
+
+
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+    <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+    <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+    <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+    <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+    <router-outlet></router-outlet>
+
+  </nb-layout-column>
+  <!-- <nb-sidebar left tag="left" style="background-color:rgb(0, 0, 0);"><nb-card>
+    <nb-menu style="background-color:rgb(0, 0, 0);" [items]="items" autoCollapse="true">
+    </nb-menu>
+  </nb-card></nb-sidebar> -->
+
+ <!--  <nb-layout-footer fixed>
+ <h1>StreamPixel/Ghassen Belhouchet</h1>
+  </nb-layout-footer> -->
+
+</nb-layout>

@@ -1,0 +1,27 @@
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Desktop\Work stuff\qsd\angular-identity-aspnetcore-security-angular-identity-user-registration\start\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Ghass\Music\AKFA\Web Api\Web Api\CompanyEmployees\Entities\obj\Debug\netcoreapp3.1\Entities.pdb

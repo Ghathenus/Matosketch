@@ -1,0 +1,12 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 67%;
+}
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}

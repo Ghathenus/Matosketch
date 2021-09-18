@@ -1,0 +1,49 @@
+
+ <nb-card style="background-color:rgb(11, 5, 41);">
+
+  <nb-card-body style="background-color:rgb(11, 5, 41);">
+
+
+        <p><strong>Search for a Facility</strong><nb-search type="rotate-layout"></nb-search></p>
+        <a class="nav-link"[routerLink]="['/main']" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Click here to look for Facilites geographically</a>
+        <p>List of <strong>Facilities:</strong></p>
+        <div class="row">
+     <!-- <div *ngIf="facilities">  <ng-container  *ngFor = "let facility of facilities"  class="col-2" >{{facility.name}}</ng-container></div> -->
+
+  </div>
+  <ul style= "color :rgb(11, 5, 41)">
+<button style= "color :rgb(255, 255, 255)" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="loadFacilities() "><strong>
+  Get the list of facilities</strong>
+  </button>
+</ul>
+<ul>
+<div class ="row" >
+ <div *ngFor="let f of  facilities" >
+<div  *ngIf="f.fofSpecialties">
+
+   <ul><div *ngIf="f.fofSpecialties"><app-faccards [facility] ="f"></app-faccards></div></ul>
+</div>
+</div>
+</div>
+</ul>
+  <!-- <div *ngIf="facilities">
+    <div class="card mb-4">
+      <div class="card-img-wrapper">
+        <img src="assets/aa.jpg" width="30" height="30px" class="card-img-top">
+        /</div>
+        <div class="card-body p-1">
+
+    <h6 class="card-title text-center mb-1"><i class="fa fa-user mr-2"></i>
+      {{facilities[0].name}}
+    </h6>
+
+    <p class="card-text text-muted text-center">{{facilities[0].address}}</p>
+        </div>
+        </div>
+
+      </div> -->
+
+
+
+<router-outlet></router-outlet>

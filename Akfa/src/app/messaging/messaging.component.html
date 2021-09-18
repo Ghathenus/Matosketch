@@ -1,0 +1,50 @@
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+
+<!-- <button style= "color :rgb(255, 255, 255)" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="loadMessages() " (click)="loadUser()"><strong>
+  Get the list of facilities</strong></button> -->
+<div class="card" style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+    <div *ngIf="messages?.length === 0" style="color :rgb(11, 5, 41)">
+      No Messages yet......
+    </div>
+    <ul *ngIf="messages?.length>0">
+      <li *ngFor="let message of messages">
+        <div>
+          <span class="chat-img float-right">
+            <img class="rounded-circle" src="assets/femalee.png">
+          </span>
+          <div class="chat-body">
+            <div class="header">
+              <small class="text-muted">
+                <span class="fa fa-clock-o" ><p style="color :rgb(11, 5, 41)">{{message.messageSent}}</p></span>
+                <span class="text-danger" *ngIf="!message.dateRead && message.senderUsername !== user.uName" > <p style="color :rgb(11, 5, 41)">(unread)</p></span>
+                <span class="text-danger" *ngIf="message.dateRead && message.senderUsername !== user.uName" ><p style="color :rgb(11, 5, 41)">(read {{message.dateRead}})</p> </span>
+              </small>
+            </div>
+            <a style="color :rgb(11, 5, 41)"><p style="color :rgb(11, 5, 41)"><strong>{{message.content}}</strong></p></a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <div class="card-footer" >
+    <form #messageForm="ngForm" (ngSubmit)="sendMessage() "  autocomplete="off">
+      <div class="input-group">
+        <input
+        name="messageContent"
+        required
+        [(ngModel)]="messageContent"
+         type="text"
+         class="form-control input-sm"
+         placeholder="Send a private message">
+        <div class="input-group-append">
+          <button [disabled]="!messageForm.valid" class="btn btn-primary"   type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,66 @@
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+
+<div class="row">
+  <div class="col-4">
+    <div  style="background-color:rgba(0, 0, 0, 0.0);">
+      <img src="assets/aa.jpg" class="card-img-top img-thumbnail">
+      <div class="card-body">
+        <div>
+          <strong style= "color :rgb(11, 5, 41)"> First Name:</strong>
+          <p style= "color :rgb(11, 5, 41)">{{user.firstName}}</p>
+          </div>
+          <div>
+            <strong style= "color :rgb(11, 5, 41)">Last Name:</strong>
+            <p style= "color :rgb(11, 5, 41)">{{user.lastName}}</p>
+            </div>
+        <div>
+          <strong style= "color :rgb(11, 5, 41)">Address:</strong>
+          <p style= "color :rgb(11, 5, 41)">{{user.address}}</p>
+          </div>
+          <div>
+            <strong style= "color :rgb(11, 5, 41)">Age:</strong>
+            <p style= "color :rgb(11, 5, 41)">{{user.age}}</p>
+          </div>
+          <div>
+            <strong style= "color :rgb(11, 5, 41)">Email:</strong>
+            <p style= "color :rgb(11, 5, 41)">{{user.email}}</p>
+          </div>
+          <div class="card-footer" style="background-color:rgba(0, 0, 0, 0.0);">
+          <div class="btn-group d-flex">
+
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+<div class="col-8" style="background-color:rgba(0, 0, 0,0.0);">
+
+  <nb-tabset>
+  <nb-tab  tabTitle="About {{user.name}}"> <ul><h1 style="color :rgb(11, 5, 41)">Description</h1></ul><ul><p style="color :rgb(11, 5, 41)"><strong>{{user.description}}</strong></p></ul> </nb-tab>
+  <nb-tab tabTitle="Photos"><ul><h1><app-ppics [profile]="user"></app-ppics></h1></ul> </nb-tab>
+  <nb-tab tabTitle="Video" > <ul><a style= "color :rgb(255, 255, 255)" type="button" class="btn btn-primary" href="{{url}}" style="background-color:rgb(11, 5, 41);" ><strong>
+    Get the Video</strong>
+    </a>
+
+
+  </ul>
+ <ul><video height="auto" controls="controls" preload="none" onclick="this.play()">
+  <source type="video/mp4" src="{{url}}">
+
+
+Your browser does not support the video tag.
+</video></ul>
+<br>
+
+<!-- <a href="{{url}}">link text</a> -->
+</nb-tab>
+</nb-tabset>
+
+
+
+        </div>
+        </div>
+</div>
+</div>

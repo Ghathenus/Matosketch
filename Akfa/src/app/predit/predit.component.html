@@ -1,0 +1,86 @@
+
+<a class="nav-link"[routerLink]="['/makechoice']" routerLinkActive="active"
+[routerLinkActiveOptions]="{exact: true}">Do you want to join our Database and become a part of our website?</a>
+
+<div class="row" *ngIf="profile">
+  <div class="col-4" *ngIf = "profile.name">
+    <h1>{{profile.name}}</h1>
+    <h6>Logged in as a normal user</h6>
+    </div>
+  <div class="col-4" *ngIf = "profile.phoneNumber">
+    <h1>{{profile.name}}</h1>
+    <h6>Logged in as a Market Research Company</h6>
+    </div>
+    <div class="col-4" *ngIf = "profile.firstName">
+      <h1>{{profile.firstName}}{{profile.lastName}}</h1>
+      <h6>Logged in as personnel</h6>
+      </div>
+      <div class="col-4" *ngIf = "profile.fofSpecialties">
+        <h1>{{profile.name}}</h1>
+        <h6>Logged in as a Facility</h6>
+        </div>
+    <div class="col-8">
+      <div class="alert alert-info" style="background-color:rgb(11, 5, 41);" *ngIf="editForm.dirty || editForm2.dirty" >
+        <p><strong>Information:</strong> You have made changes. Any unsaved changed will be lost</p>
+
+      </div>
+      <div class="alert alert-info" style="background-color:rgb(11, 5, 41);" *ngIf="showMyMessage">
+      <p *ngIf="showMyMessage"><strong>Your changes were saved!!</strong></p>
+      </div>
+    </div>
+    <div class="col-4">
+    <div class="card" style="background-color:rgb(11, 5, 41);">
+      <img src="assets/user.png" class="card-img-top img-thumbnail">
+      <div class="card-body">
+        <form #editForm="ngForm" (ngSubmit)="updateUser()">
+        <label>Address</label>
+       <input [(ngModel)]="profile.address" type="text" name="address" class="form-control mx-2">
+          <div>
+            <strong>Website:</strong>
+            <input [(ngModel)]="profile.website" type="text" name="website" class="form-control mx-2">
+          </div>
+          <div>
+            <strong>Email:</strong>
+            <input [(ngModel)]="profile.email" type="text" name="email" class="form-control mx-2">
+          </div>
+          <div *ngIf="profile.personnel">
+            <strong>Personnel:</strong>
+            <input [(ngModel)]="profile.personnel" type="text" name="personnel" class="form-control mx-2">
+          </div>
+          <div *ngIf="profile.phoneNumber">
+            <strong>Phone number:</strong>
+            <input [(ngModel)]="profile.phoneNumber" type="text" name="phoneNumber" class="form-control mx-2">
+          </div>
+        </form>
+          <div class="card-footer" style="background-color:rgb(11, 5, 41);">
+          <div class="btn-group d-flex">
+            <button form="editForm" type="submit" class="btn btn-success btn-block" (click)="showMessageSoon()">Save Changes</button>
+
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+<div class="col-8" style="background-color:rgb(11, 5, 41);">
+  <form #editForm2="ngForm" (ngSubmit)="updateUser()">
+  <mat-tab-group>
+ <div *ngIf="profile.name"> <mat-tab label="About {{profile.name}}"><form><textarea [(ngModel)]="profile.description" name="description" rows="10" type="text" class="form-control mx-2"></textarea> </form> </mat-tab></div>
+ <div *ngIf="profile.firstName" > <mat-tab label="About {{profile.firstName}}"> <form><textarea [(ngModel)]="profile.description" name="description" rows="10" type="text" class="form-control mx-2"></textarea> </form></mat-tab></div>
+ <div *ngIf="profile.phoneNumber"> <mat-tab label="Video"><ul><h1><app-uploadvideo></app-uploadvideo> </h1></ul> </mat-tab></div>
+ <div *ngIf="profile.fofSpecialties"> <mat-tab label="Photos"><ul><h1> Photos will go here </h1></ul> </mat-tab></div>
+ <div *ngIf="profile.fofSpecialties"> <mat-tab label="Fields"><form><textarea [(ngModel)]="profile.fofSpecialties" name="fields" rows="10" type="text" class="form-control mx-2"></textarea> </form> </mat-tab></div>
+
+
+</mat-tab-group>
+</form>
+
+
+        </div>
+        </div>
+
+
+
+
+
+

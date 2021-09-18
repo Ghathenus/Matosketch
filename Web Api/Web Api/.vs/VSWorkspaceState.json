@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CompanyEmployees",
+    "\\CompanyEmployees\\CompanyEmployees",
+    "\\CompanyEmployees\\CompanyEmployees\\Controllers",
+    "\\CompanyEmployees\\CompanyEmployees\\Feed",
+    "\\CompanyEmployees\\Entities",
+    "\\CompanyEmployees\\Entities\\Configuration",
+    "\\CompanyEmployees\\Entities\\DTO",
+    "\\CompanyEmployees\\Entities\\Models",
+    "\\CompanyEmployees\\Repository"
+  ],
+  "SelectedNode": "\\CompanyEmployees\\CompanyEmployees\\MappingProfile.cs",
+  "PreviewInSolutionExplorer": false
+}

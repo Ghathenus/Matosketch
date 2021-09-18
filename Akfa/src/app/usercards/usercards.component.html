@@ -1,0 +1,26 @@
+
+  <div class="card-img-wrapper">
+    <img src="assets/tt.jfif"  class="card-img-top">
+<ul class="list-inline facility-icons animate text-center">
+<li class ="list-inline-item"><a class="nav-link" routerLink='/users/{{user.uName}}' routerLinkActive="active"
+  > <strong style= "color :rgb(11, 5, 41)"><mat-icon>info</mat-icon></strong></a></li>
+<li class ="list-inline-item"><a class="nav-link"routerLink='/messages/{{user.uName}}' routerLinkActive="active"
+  ><strong style= "color :rgb(11, 5, 41) "><mat-icon >mail</mat-icon></strong></a></li>
+
+</ul>
+
+
+
+    </div>
+    <div class="card-body p-1">
+
+<h6 class="card-title text-center mb-1">
+  <strong style= "color :rgb(11, 5, 41)">
+  {{user.uName}}
+</strong>
+</h6>
+
+<p class="card-text text-muted text-center" style= "color :rgb(11, 5, 41)"><strong style= "color :rgb(11, 5, 41)">{{user.firstName}}</strong></p>
+    </div>
+
+    <router-outlet></router-outlet>

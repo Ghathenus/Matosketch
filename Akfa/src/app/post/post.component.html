@@ -1,0 +1,59 @@
+<div style="background-color:rgba(0, 0, 0, 0.0);">
+  <div class="card-body">
+      <h1 class="card-title" style="color :rgb(11, 5, 41)" >Post</h1>
+
+      <div *ngIf="showError" class="alert alert-danger" role="alert">
+          <span [innerHTML]="errorMessage"></span>
+      </div>
+      <form [formGroup]="postForm" autocomplete="off" novalidate (ngSubmit)="UserPost(postForm.value)">
+        <ul>
+          <div class="form-group row">
+              <label for="Title"  class="col-form-label col-sm-2" style="color :rgb(11, 5, 41)"><strong>Title:</strong></label>
+              <div class="col-md-5">
+                  <input type="text" id="title" formControlName="title" class="form-control" />
+              </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="form-group row">
+            <label for="Description"  class="col-form-label col-sm-2" style="color :rgb(11, 5, 41)"><strong>Short Description:</strong></label>
+            <div class="col-md-5">
+                <input type="text" id="description" formControlName="description" class="form-control" />
+            </div>
+        </div>
+      </ul>
+
+      <ul>
+        <div class="form-group row">
+          <label for="Content"  class="col-form-label col-sm-2" style="color :rgb(11, 5, 41)"><strong>Content:</strong></label>
+          <div class="col-md-5">
+            <textarea name="content" rows="10" formControlName="content" type="text" class="form-control"></textarea>
+          </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="form-group row">
+            <label for="Category"  class="col-form-label col-sm-2" style="color :rgb(11, 5, 41)"><strong>Category:</strong></label>
+            <div class="col-md-5">
+              <h2><span style="color :rgb(11, 5, 41)">Select a Category:</span></h2>
+              <select (change)="selectChangeHandler($event)">
+                <option value="Question" style="color :rgb(11, 5, 41)"><strong>Question</strong></option>
+                <option value="Problem" style="color :rgb(11, 5, 41)"><strong>Problem</strong></option>
+            </select>
+            </div>
+
+          </div>
+        </ul>
+
+
+      <br>
+          <div class="form-group row">
+              <div class="col-md-1">
+                  <button type="submit" class="btn btn-info" [disabled]="!postForm.valid">Post</button>
+              </div>
+          </div>
+
+
+
+
+

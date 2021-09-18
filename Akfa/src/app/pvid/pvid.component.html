@@ -1,0 +1,9 @@
+<button style= "color :rgb(255, 255, 255)" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="loadVideo() "><strong>
+  Get the Video</strong>
+  </button>
+<div class="video">
+  <video controls  #videoPlayer>
+      <source src="{{video.url}}" type="video/mp4" />
+      Browser not supported
+  </video>
+</div>

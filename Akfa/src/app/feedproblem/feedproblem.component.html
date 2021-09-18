@@ -1,0 +1,15 @@
+
+
+
+ <!--  Total Item: {{RssData?.rss.channel[0].item.length}} -->
+
+ <ul>
+  <ul *ngFor="let o of RssData?.rss.channel[0].item "><div  *ngIf="o.category[0]=='Problem'" accent="info" style="background-color:rgba(0, 0, 0, 0.0);"><div *ngIf="o.category[0] == 'Problem'"></div><span style="color :rgb(11, 5, 41); font-size: 32px; margin: 21px 0; display: block;"><U><strong>{{o.title[0]}}</strong></U></span>
+  <nb-card-body><p style="color :rgb(11, 5, 41)"><strong>{{o.description[0]}}</strong></p><p>Published By :</p><p style="color :rgb(11, 5, 41)"><strong>{{o.author[0]}}</strong> </p><p style="color :rgb(11, 5, 41)"><strong>{{o.pubDate[0]}}</strong></p></nb-card-body><button class="btn btn-primary" style="background-color:rgb(11, 5, 41); float: right;"routerLink='/messages/{{o.author[0]}}' routerLinkActive="active" ><mat-icon>question_answer</mat-icon><p><strong>Interact</strong></p></button>
+</div></ul>
+<!-- <ul>
+<button style= "color :rgb(255, 255, 255)" type="button" class="btn btn-primary" style="background-color:rgb(11, 5, 41);" (click)="GetRssFeedData()">
+Refresh Feed
+</button >
+</ul> -->
+<router-outlet></router-outlet>
